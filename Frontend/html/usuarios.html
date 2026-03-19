@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios</title>
+    <link rel="stylesheet" href="../css/usuarios.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@300..700&family=Pacifico&family=Poetsen+One&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://www.cesde.edu.co/wp-content/uploads/2022/11/cropped-favicon-32x32.png" sizes="32x32">
+</head>
+</head>
+<body class="font">
+    <header id="up">
+        <div class="headerlogo">
+            <a href="../html/index.html">
+                <img src="https://www.cesde.edu.co/wp-content/uploads/2023/02/logo-Cesde-2023.svg" alt="Logo CESDE" class="imgheaderlogo">
+            </a>
+        </div>
+        <nav>
+            <ul class="lista">
+                <li class="item"><a href="../html/registros.html" class="link">Registros</a></li>
+                <li class="item"><a href="../html/sluts.html" class="link">Espacios</a></li>
+                <a href="../html/index.html" class="link btn-nav"><li class="item">Volver</li></a>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="contenedor">
+            <h1 class="titulop">Gestión de usuarios</h1>
+            <div class="usuarios">
+                <div class="card">
+                    <h2>Usuarios Registrados</h2>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Correo</th>
+                            <th>Rol</th>
+                            <th>Estado</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>María Pérez</td>
+                            <td>maria@example.com</td>
+                            <td>Administrador</td>
+                            <td>Activo</td>
+                        </tr>
+                        <tr>
+                            <td>Carlos Ruiz</td>
+                            <td>carlos@example.com</td>
+                            <td>Cliente</td>
+                            <td>Inactivo</td>
+                        </tr>
+                        
+                        </tbody>
+                    </table>
+                </div>
+                <div class="card">
+                    <h2 class="titulocard2">Registrar Nuevo Usuario</h2>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Nombre completo" id="nombre" name="nombre" required />
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Correo electrónico" id="correo" name="correo" required />
+                        </div>
+                        <div class="form-group">
+                            
+                            <select id="rol" name="rol">
+                                <option value="admin">Administrador</option>
+                                <option value="cliente">Cliente</option>
+                                <option value="operador">Operador</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            
+                            <select id="estado" name="estado">
+                                <option value="activo">Activo</option>
+                                <option value="inactivo">Inactivo</option>
+                            </select>
+                        </div>
+                        <button type="submit">Registrar Usuario</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

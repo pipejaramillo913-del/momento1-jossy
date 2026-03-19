@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --rosado: #E71D73;
+    --rosado-oscuro: #C51560;
+    --celeste: #3399FF;
+    --blanco: #FFFFFF;
+    --gris-claro: #F8F8F8;
+    --gris-medio: #D9D9D9;
+    --gris-transparente: #f7f7f7b3;
+    --gris-oscuro: #333333;
+    --negro: #121212;
+}
+body{
+        background-color: var(--blanco);
+        height: 100vh;
+        font-family: "Comfortaa", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+    }
+
+@media screen and (width >= 1025px){
+    section{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #login{
+        width: 35%;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: var(--gris-claro);
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px var(--gris-oscuro);
+        transition: box-shadow 0.5s ease-in-out, transform 0.8s ease-in-out;
+    }
+    .imglogin{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cesdelogo{
+        width: 90%;
+    }
+    .pImglogin{
+        color: var(--gris-oscuro);
+        position: relative;
+        bottom: 10px;
+        font-size: 1.8rem;
+        font-weight: 800;
+    }
+    #inputs{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    .inp{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 60%;
+        height: 40px;
+        background-color: var(--blanco);
+        border-radius: 5px;
+        box-shadow: 0 2px var(--gris-medio);
+        overflow: hidden;
+        transition: box-shadow 0.2s ease-in-out, transform 0.5s ease-in-out;
+    }
+    .inp:hover{
+        box-shadow: 1px 1px 10px #3399ff;
+        transform: scale(1.03);
+    }
+    section #login #inputs input{
+        background-color: var(--blanco);
+        width: 70%;
+        height: 100%;
+        outline: none;
+        border: none;
+    }
+    .input03{
+        width: 60%;
+        height: 40px;
+        color: #ffffff;
+        background-color: var(--rosado);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+    }
+    .input03:hover{
+        background-color: var(--rosado-oscuro);
+    }
+    .reestablecer{
+        color: var(--gris-oscuro);
+        font-weight: 600;
+    }
+    .reestablecer:hover{
+        cursor: pointer;;
+    }
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Frontend/css/Usuarios/VistasUsuarios/PerfilUsuarios.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@300..700&family=Pacifico&family=Poetsen+One&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://www.cesde.edu.co/wp-content/uploads/2022/11/cropped-favicon-32x32.png" sizes="32x32">
+    <title>Panel de Usuario</title>
+</head>
+<body>
+    <header>
+        <div class="header-a">
+            <a href="#" class="aHeader-a" aria-controls="asideBar" aria-expanded="false" title="abrir/cerrar menu">
+                <svg id="menu" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#e71d73" viewBox="0 0 256 256"><path d="M222,128a6,6,0,0,1-6,6H40a6,6,0,0,1,0-12H216A6,6,0,0,1,222,128ZM40,70H216a6,6,0,0,0,0-12H40a6,6,0,0,0,0,12ZM216,186H40a6,6,0,0,0,0,12H216a6,6,0,0,0,0-12Z"></path></svg>
+            </a>
+        </div>
+        <div class="header-b">
+            <span>Usuario</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="var(--rosado)" viewBox="0 0 256 256"><path d="M128,26A102,102,0,1,0,230,128,102.12,102.12,0,0,0,128,26ZM71.44,198a66,66,0,0,1,113.12,0,89.8,89.8,0,0,1-113.12,0ZM94,120a34,34,0,1,1,34,34A34,34,0,0,1,94,120Zm99.51,69.64a77.53,77.53,0,0,0-40-31.38,46,46,0,1,0-51,0,77.53,77.53,0,0,0-40,31.38,90,90,0,1,1,131,0Z"></path></svg>
+        </div>
+    </header>
+    <aside id="asideBar">
+            <div id="bar">
+                <div class="logo">
+                    <img src="https://www.cesde.edu.co/wp-content/uploads/2023/02/logo-Cesde-2023.svg" alt="" class="cesdelogo">
+                    <p class="pImglogo">PARKING SYSTEM</p>
+                </div>
+                <nav>
+                    <ul class="lista">
+                        <li class="item"><a href="/Frontend/html/Usuarios/panel_usuario.html" class="link">Principal</a></li>
+                        <li class="item"><a href="/Frontend/html/Usuarios/VistasUsuarios/VehiculoUsuarios.html" class="link">Vehiculo</a></li>
+                        <li class="item"><a href="#" class="link">Parqueadero</a></li>
+                        <li class="item" id="cerrarSesion"><a>Cerrar Sesion</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </aside>
+    <main>
+        <div id="principal">
+            <div id="contenedor1">
+                <div class="informacion">
+                    <div id="editarDatos" style="display: none;">
+                        <h1>Editar Datos</h1>
+                        <h3 id="mensaje"></h3>
+                        <form id="datosUsuario" autocomplete="off">
+                            <div class="input-group">
+                                
+                                <input type="email" id="correo" name="correo" placeholder="correo">
+                            </div>
+                            <div class="input-group">
+                                
+                                <input type="password" id="contrasenaActual" name="constrasenaActual" placeholder="Contraseña Actual">
+                            </div>
+                            <div class="input-group">
+                                
+                                <input type="password" id="contrasenaNueva" name="contrasenaNueva" placeholder="Contraseña Nueva">
+                            </div>
+                            <div id="buttons">
+                                <button id="guardar" class="btn" type="button">Guardar</button>
+                                <button id="cancelar" class="btn" type="button">Cancelar</button>
+                            </div>
+                        </form>
+                    </div>
+                    <button id="editar" class="btn" type="button">Editar</button>
+                </div>
+            </div>
+            <div id="contenedor2">
+                <div class="informacion">
+                    <h2 class="titulo2">Informacion Personal</h2>
+                    <div id="datos1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" fill="var(--rosado)" viewBox="0 0 256 256"><path d="M128,26A102,102,0,1,0,230,128,102.12,102.12,0,0,0,128,26ZM71.44,198a66,66,0,0,1,113.12,0,89.8,89.8,0,0,1-113.12,0ZM94,120a34,34,0,1,1,34,34A34,34,0,0,1,94,120Zm99.51,69.64a77.53,77.53,0,0,0-40-31.38,46,46,0,1,0-51,0,77.53,77.53,0,0,0-40,31.38,90,90,0,1,1,131,0Z"></path></svg>
+                        <h3 id="nombreU"></h3>
+                    </div>
+                    <di id="datos2">
+                        <h3 id="correoU"></h3>
+                        <p id="carrera">Carrera</p>
+                        <h4 id="carreraName">Desarrollo de Software</h4>
+                    </di>
+                    <div id="datos3">
+                        <div id="v1">
+                            <h3 id="nombreV">Vehiculos</h3>
+                            <p id="ultimaPlaca"></p>
+                        </div>
+                        <div id="v2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="var(--rosado)" viewBox="0 0 256 256"><path d="M240,106H227.9L199.59,42.31A14,14,0,0,0,186.8,34H69.2a14,14,0,0,0-12.79,8.31L28.1,106H16a6,6,0,0,0,0,12H26v82a14,14,0,0,0,14,14H64a14,14,0,0,0,14-14V182H178v18a14,14,0,0,0,14,14h24a14,14,0,0,0,14-14V118h10a6,6,0,0,0,0-12ZM67.37,47.19A2,2,0,0,1,69.2,46H186.8a2,2,0,0,1,1.83,1.19L214.77,106H41.23ZM66,200a2,2,0,0,1-2,2H40a2,2,0,0,1-2-2V182H66Zm150,2H192a2,2,0,0,1-2-2V182h28v18A2,2,0,0,1,216,202Zm2-32H38V118H218ZM58,144a6,6,0,0,1,6-6H80a6,6,0,0,1,0,12H64A6,6,0,0,1,58,144Zm112,0a6,6,0,0,1,6-6h16a6,6,0,0,1,0,12H176A6,6,0,0,1,170,144Z"></path></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="/Frontend/javaScript/auth.js"></script>
+    <script src="/Frontend/javaScript/Usuarios/VistasUsuarios/PerfilUsuarios.js"></script>
+</body>
+</html>

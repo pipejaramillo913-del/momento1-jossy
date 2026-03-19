@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registros</title>
+    <link rel="stylesheet" href="../css/registros.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@300..700&family=Pacifico&family=Poetsen+One&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://www.cesde.edu.co/wp-content/uploads/2022/11/cropped-favicon-32x32.png" sizes="32x32">
+</head>
+<body class="font">
+    <header id="up">
+        <div class="headerlogo">
+            <a href="../html/index.html">
+                <img src="https://www.cesde.edu.co/wp-content/uploads/2023/02/logo-Cesde-2023.svg" alt="Logo CESDE" class="imgheaderlogo">
+            </a>
+        </div>
+        <nav>
+            <ul class="lista">
+                <li class="item"><a href="../html/sluts.html" class="link">Espacios</a></li>
+                <li class="item"><a href="../html/usuarios.html" class="link">Usuarios</a></li>
+                <a href="../html/index.html" class="link btn-nav"><li class="item">Volver</li></a>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="sec">
+            <input type="radio" name="opcion" id="btn_entrada" checked>
+            <input type="radio" name="opcion" id="btn_salida">
+
+            <div class="btns">
+                <label for="btn_entrada">Entrada</label>
+                <label for="btn_salida">Salida</label>
+            </div>
+
+            <div class="cards">
+                <div id="card_entrada" class="card">
+                    <form>
+                        <div class="inp">
+                            <input type="text" placeholder=" Placa del vehículo" required>
+                        </div>
+                        <div class="inp">
+                            <input type="text" placeholder=" Nombre del conductor" required>
+                        </div>
+                        <div class="inp">
+                            <input type="text" placeholder=" Tipo de vehiculo" required>
+                        </div>
+                        <button type="submit">Registrar</button>
+                    </form>
+                </div>
+
+                <div id="card_salida" class="card">
+                    <form>
+                        <div class="inp">
+                            <input type="text" placeholder=" Placa del vehículo" required>
+                        </div>
+                        <button type="submit">Registrar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

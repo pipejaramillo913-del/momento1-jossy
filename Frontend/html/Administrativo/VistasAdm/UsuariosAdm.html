@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Frontend/css/Administrativo/VistasAdm/UsuariosAdm.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@300..700&family=Pacifico&family=Poetsen+One&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://www.cesde.edu.co/wp-content/uploads/2022/11/cropped-favicon-32x32.png" sizes="32x32">
+    <title>Panel Administrativo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-a">
+            <a href="#" class="aHeader-a" aria-controls="asideBar" aria-expanded="false" title="abrir/cerrar menu">
+              <svg id="menu" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#e71d73" viewBox="0 0 256 256"><path d="M222,128a6,6,0,0,1-6,6H40a6,6,0,0,1,0-12H216A6,6,0,0,1,222,128ZM40,70H216a6,6,0,0,0,0-12H40a6,6,0,0,0,0,12ZM216,186H40a6,6,0,0,0,0,12H216a6,6,0,0,0,0-12Z"></path></svg>
+            </a>
+        </div>
+        <div class="header-b">
+            <span>Administrador</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="var(--rosado)" viewBox="0 0 256 256"><path d="M128,26A102,102,0,1,0,230,128,102.12,102.12,0,0,0,128,26ZM71.44,198a66,66,0,0,1,113.12,0,89.8,89.8,0,0,1-113.12,0ZM94,120a34,34,0,1,1,34,34A34,34,0,0,1,94,120Zm99.51,69.64a77.53,77.53,0,0,0-40-31.38,46,46,0,1,0-51,0,77.53,77.53,0,0,0-40,31.38,90,90,0,1,1,131,0Z"></path></svg>
+        </div>
+    </header>
+    <aside id="asideBar">
+            <div id="bar">
+                <div class="logo">
+                    <img src="https://www.cesde.edu.co/wp-content/uploads/2023/02/logo-Cesde-2023.svg" alt="" class="cesdelogo">
+                    <p class="pImglogo">PARKING SYSTEM</p>
+                </div>
+                <nav>
+                    <ul class="lista">
+                        <li class="item"><a href="/Frontend/html/Administrativo/administrativo.html" class="link">Principal</a></li>
+                        <li class="item"><a href="/Frontend/html/Administrativo/VistasAdm/VehiculosAdm.html" class="link">Vehiculos</a></li>
+                        <li class="item"><a href="/Frontend/html/Administrativo/VistasAdm/ParqueaderoAdm.html" class="link">Parqueadero</a></li>
+                        <li class="item" id="cerrarSesion"><a>Cerrar Sesion</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </aside>
+    <main>
+        <section id="agregarUsuario">
+            <h3 id="titulo">Nuevo Usuario</h3>
+                <form id="datosUsuario" autocomplete="off">
+                        <div class="input-group">
+                            
+                            <input type="text" id="cedula" name="cedula" placeholder="Cedula">
+                        </div>
+                        <div class="input-group">
+                            
+                            <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+                        </div>
+                        <div class="input-group">
+                            
+                            <input type="email" id="correo" name="correo" placeholder="Correo">
+                        </div>
+                        <div class="input-group">
+                            
+                            <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña">
+                        </div>
+                        <div class="input-group">
+                            <select id="estado" name="estado" aria-placeholder="Estado" style="display: none;">
+                                <option value="Activo">Activo</option>
+                                <option value="Inactivo">Inactivo</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <select id="rol" name="rol" aria-placeholder="Rol">
+                                <option value="Administrador">Administrador</option>
+                                <option value="Estudiante">Estudiante</option>
+                            </select>
+                        </div>
+                        <button id="btn-crearUsuario" type="button">Crear</button>
+                    </form>
+        </section>
+        <section id="Usuarios">
+            <div id="mensajes">
+                <h3>Lista de Usuarios</h3>
+                <div id="mensaje"></div>
+            </div>
+            <div class="listaUsuarios">
+                <table class="tabla-encabezados">
+                    <thead>
+                        <tr>
+                            <th>Cedula</th>
+                            <th>Nombre</th>
+                            <th>Correo</th>
+                            <th>Rol</th>
+                            <th>Estado</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbodyUsuarios">
+                        <!-- Aquí se insertarán las filas -->
+                    </tbody>
+                </table>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="/Frontend/javaScript/auth.js"></script>
+    <script src="/Frontend/javaScript/Administrativo/VistasAdm/UsuariosAdm.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
